@@ -1159,6 +1159,10 @@
                                     }
                                 }
                             },
+                            "hostUsers": {
+                                "description": "Whether to run the pod in the host user namespace. Defaults to false.",
+                                "type": "boolean"
+                            },
                             "imagePullSecret": {
                                 "description": "Name of secret with credentials to private container repository",
                                 "type": "string"

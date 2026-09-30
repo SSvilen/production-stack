@@ -111,6 +111,7 @@ spec:
       {{- if hasKey $modelSpec "serviceAccountName" }}
       serviceAccountName: {{ $modelSpec.serviceAccountName }}
       {{- end }}
+      hostUsers: {{ $modelSpec.hostUsers | default false }}
       {{- if and (hasKey $modelSpec "lmcacheConfig") (hasKey $modelSpec.lmcacheConfig "enablePD") ($modelSpec.lmcacheConfig.enablePD) }}
       hostIPC: true
       hostPID: true
